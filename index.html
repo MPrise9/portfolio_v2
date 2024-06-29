@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" href="images/m_logo.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Nunito;
+    }
+
+    body {
+      background-image: url(images/wallpaper.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      justify-content: center;
+    }
+
+    .navbar {
+      width: 90%;
+      margin: 20px;
+      padding-left: 200px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 20px 40px;
+      position: relative;
+    }
+
+    .navbar ul li a {
+      display: inline-block;
+      margin: 20px 20px;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      text-transform: uppercase;
+      color: #7f1e36;
+      text-shadow: 1px 1px #930528;
+    }
+
+    .navbar ul li ::after {
+      content: "";
+      height: 3px;
+      width: 0;
+      background: #cb6e92;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+    }
+
+    .navbar ul li :hover::after {
+      width: 100%;
+    }
+
+    .content {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      transform: translateY(-50%);
+    }
+    .content h1 {
+      font-size: 50px;
+      margin-top: 40px;
+      color: #f399b0;
+      text-shadow: 2px 2px #930528;
+    }
+    .content p {
+      color: #eadce0;
+      font-size: 20px;
+      margin: 20px auto;
+      margin-bottom: 50px;
+      line-height: 25px;
+      text-shadow: 1px 1px #930528;
+    }
+    .btn {
+      width: 100px;
+      padding: 10px 10px;
+      text-align: center;
+      border-radius: 10px;
+      font-weight: bold;
+      border: 2px solid #cb6e92;
+      color: #fcf6f7;
+      background-color: #f399b0;
+      text-decoration: none;
+    }
+    footer {
+      display: block;
+      margin: 50px 0;
+    }
+
+  </style>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="images/Myo Pa Pa Kyaw_Resume___.pdf.zip">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact </a></li>
+          <li><a href="about.html">About Me </a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>Hi! I am Myo Pa Pa Kyaw.</h1>
+        <br />
+        <p>
+          This is my portfolio that I am practicing at Simbolo. Would you like
+          to know more detail about me?
+        </p>
+        <div>
+          <a href="about.html" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- Home Page -->
+  </body>
+</html>
